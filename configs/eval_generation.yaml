@@ -1,0 +1,19 @@
+# Table 1: Unconditional Pose Generation Configuration
+task: "generation"
+checkpoint_path: "checkpoints/poserfm/best_model.pt"
+
+evaluation:
+  num_runs: 20
+  poses_per_run: 500
+  solver:
+    method: "midpoint"  # Table 1 uses midpoint
+    num_steps: 100      # Evaluated at 100 and 1000
+    retraction: "last_step"
+
+targets:
+  FID_100: 0.014
+  APD_100_cm: 15.481
+  d_NN_100_rad: 0.069
+  FID_1000: 0.013
+  APD_1000_cm: 15.544
+  d_NN_1000_rad: 0.070

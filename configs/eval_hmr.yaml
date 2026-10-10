@@ -1,0 +1,32 @@
+# Tables 4 & 5: Human Mesh Recovery (EHF) Configuration
+task: "hmr"
+checkpoint_path: "checkpoints/poserfm/best_model.pt"
+
+data:
+  dataset: "EHF"
+  total_images: 100
+  detector: "ViTPose-H"
+  cliff_checkpoint: "checkpoints/cliff/hr48-PA53.7_MJE91.4_MVE110.0_agora_val.pt"
+
+guidance:
+  solver:
+    method: "euler"
+    num_steps: 100
+    retraction: "last_step"
+  lr: 0.1
+  num_iters: 400
+  blend_alpha: 0.75
+  lambda_data: 1.0
+  lambda_alpha: 50.0
+  lambda_beta: 50.0
+  lambda_traj: 50.0
+
+targets:
+  scratch:
+    PA_MPJPE: 54.85
+    PA_MPVPE: 53.16
+    PCK_50: 65.29
+  cliff_init:
+    PA_MPJPE: 47.24
+    PA_MPVPE: 48.67
+    PCK_50: 71.40

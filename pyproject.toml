@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "posedflow"
+version = "0.1.0"
+description = "Reproduction and implementation of PoseD-Flow (CVPR 2026): Versatile and Guided Flow Matching Model of Human Pose"
+authors = [
+    {name = "PoseD-Flow Reproduction Team"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch>=2.1.0",
+    "numpy>=1.24.0",
+    "scipy>=1.11.0",
+    "smplx>=0.1.28",
+    "pyyaml>=6.0",
+    "tqdm>=4.66.0",
+    "scikit-learn>=1.3.0",
+    "matplotlib>=3.8.0",
+    "pandas>=2.1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

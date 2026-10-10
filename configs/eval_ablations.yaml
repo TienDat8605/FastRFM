@@ -1,0 +1,34 @@
+# Table 6: Geometric Ablation Study Configuration
+task: "ablations"
+
+models:
+  PoseFM: "checkpoints/posefm/best_model.pt"
+  PoseFM_geom: "checkpoints/posefm/best_model.pt"
+  PoseRFM: "checkpoints/poserfm/best_model.pt"
+
+evaluation:
+  tasks:
+    - "left_leg"
+    - "legs"
+  solver:
+    method: "euler"
+    num_steps: 100
+    retraction: "last_step"
+  lr: 0.1
+  num_iters: 200
+  blend_alpha: 0.25
+  lambda_traj_when_on: 1.0e-3
+
+matrix_target_left_leg_mpvpe:
+  PoseFM_none_none: 102.60
+  PoseFM_geo_none: 215.25
+  PoseFM_none_traj: 141.66
+  PoseFM_geo_traj: 180.51
+  PoseFM_geom_none_none: 99.79
+  PoseFM_geom_geo_none: 91.00
+  PoseFM_geom_none_traj: 129.55
+  PoseFM_geom_geo_traj: 90.46
+  PoseRFM_none_none: 107.32
+  PoseRFM_geo_none: 91.80
+  PoseRFM_none_traj: 109.35
+  PoseRFM_geo_traj: 83.81

@@ -1,0 +1,23 @@
+# Core PyTorch and deep learning
+torch>=2.1.0
+torchvision>=0.16.0
+
+# Scientific computing and geometry
+numpy>=1.24.0,<2.0.0
+scipy>=1.11.0
+transforms3d>=0.4.1
+
+# Body models and 3D processing
+smplx>=0.1.28
+trimesh>=4.0.0
+
+# Data processing and I/O
+h5py>=3.9.0
+pyyaml>=6.0
+tqdm>=4.66.0
+pandas>=2.1.0
+
+# Visualization and metrics
+matplotlib>=3.8.0
+scikit-learn>=1.3.0
+opencv-python>=4.8.0
