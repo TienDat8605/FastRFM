@@ -35,7 +35,7 @@ BASE_PAGE_URL = "https://amass.is.tue.mpg.de"
 LOGIN_URL = "https://amass.is.tue.mpg.de/login.php"
 LICENSE_AGREE_URL = "https://amass.is.tue.mpg.de/admin/ajax_setlicenseagreed.php"
 
-# Exact dataset registry extracted from AMASS.html for SMPL+H G
+# Exact dataset registry extracted from the AMASS download page for SMPL+H G
 AMASS_CATALOG: Dict[str, dict] = {
     # Priority 1: Evaluation & Test Datasets (Tables 1, 2, 3)
     "Transitions": {

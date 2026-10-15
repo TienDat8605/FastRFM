@@ -4,7 +4,7 @@ Full experiment specification: [PLAN.md](PLAN.md).
 
 ## 1. Freeze the protocol
 
-- [x] Obtain the official supplement and keep it alongside the main paper. (`Nadar_PoseD-Flow_Versatile_and_CVPR_2026_supplemental.pdf`)
+- [x] Obtain the official supplement and keep it alongside the main paper. ([PDF](papers/25_2026-03_Nadar_PoseD-Flow_supplemental.pdf))
 - [x] Check whether the authors' code and pretrained weights have become available. (Confirmed 404 on `github.com/circle-group/PoseDFlow` as of 2026-10-10)
 - [x] Create a target-results sheet for **Tables 1–6**, including metrics, units, and uncertainty definitions. ([protocol/targets.md](protocol/targets.md))
 - [x] Record each implementation setting as **published**, **baseline-derived**, or **reconstructed**. ([protocol/specification.md](protocol/specification.md))

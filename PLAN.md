@@ -17,7 +17,8 @@ Reproduce **Tables 1–6**: train PoseRFM from scratch, evaluate generation, com
 
 Sources:
 
-- [Local main paper](Nadar_PoseD-Flow_Versatile_and_Guided_Flow_Matching_Model_of_Human_Pose_CVPR_2026_paper.pdf).
+- [Local main paper](papers/25_2026-03_Nadar_PoseD-Flow_Versatile_Guided_Pose_Prior.pdf).
+- [Local supplement](papers/25_2026-03_Nadar_PoseD-Flow_supplemental.pdf).
 - [Official supplement](https://openaccess.thecvf.com/content/CVPR2026/supplemental/Nadar_PoseD-Flow_Versatile_and_CVPR_2026_supplemental.pdf).
 - [DPoser-X implementation](https://github.com/moonbow721/DPoser-X).
 - [NRDF implementation](https://github.com/hynann/NRDF).
