@@ -1,0 +1,26 @@
+================================================================================
+ARXIV PREPRINT SUBMISSION METADATA
+================================================================================
+
+TITLE:
+Fast Riemannian Flow Matching: Accelerated Guidance on SO(3)^K via Geodesic Consistency
+
+AUTHORS (Format for arXiv web form):
+[Please specify your author list, e.g.: Your Name, Co-Author Name]
+
+PRIMARY CATEGORY:
+cs.CV (Computer Vision and Pattern Recognition)
+
+CROSS-LIST CATEGORIES:
+cs.LG (Machine Learning)
+cs.RO (Robotics)
+
+ABSTRACT (Plain Text formatted for arXiv Web Form):
+Generative modeling of human pose directly on the Lie group product manifold M = SO(3)^K (PoseD-Flow) achieves state-of-the-art fidelity and valid articulated kinematics by eliminating out-of-manifold artifacts. However, solving downstream inverse tasks (pose completion, sensor denoising, and human mesh recovery) via Riemannian D-Flow requires backpropagating through 100 Riemannian Euler ODE integration steps over hundreds of optimization iterations. This incurs prohibitive latency (~300-450 ms per frame) and an unrolled computational graph payload of ~480 MiB per pose, rendering real-time or interactive tracking impossible. In this work, we propose Fast Riemannian Flow Matching (Fast-PoseRFM), an accelerated guidance framework that bridges Riemannian Conditional Flow Matching with the continuous-time geometry of the Riemannian Consistency Model (RCM). First, we formulate an intrinsic exponential-map consistency parameterization f_theta(x_t, t) = Exp_{x_t}((1-t)v_theta(x_t, t)) on SO(3)^K that analytically satisfies boundary conditions without auxiliary projections. Second, we show that naive endpoint distillation fails during inverse guidance because it distorts the linearized flow Jacobian and data-covariance operator K = D_{x_0} Psi(x_0) D_{x_0} Psi(x_0)^*; to resolve this, we derive the Simplified RCM (sRCM) objective for articulated joints, proving that the Levi-Civita covariant derivative reduces to a Lie bracket Coriolis term nabla_{dot{x}} v_theta = dot{v}_theta + 1/2 (dot{x} x v_theta) that enforces first-order Jacobian alignment along the flow trajectory. Finally, we introduce geodesic observation warm-starting and sub-graph gradient checkpointing to eliminate backward inversion costs and slash backprop memory by 1,600x. On the 3DPW and AMASS benchmarks, our method accelerates test-time guidance by 8x-14x (reducing latency to ~17-32 ms/pose) while reducing occluded joint error from 27.40 deg down to 19.13 deg, enabling the first practical real-time Riemannian flow guidance for articulated bodies.
+
+COMMENTS:
+6 pages, 1 figure, 1 table. Code: project-hpe.github.io
+
+LICENSE:
+arXiv.org perpetual, non-exclusive license (recommended, compatible with IEEE/CVPR/ECCV copyright)
+================================================================================

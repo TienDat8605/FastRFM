@@ -186,6 +186,7 @@ def create_session(username: Optional[str], password: Optional[str], cookie: Opt
     session = requests.Session()
     session.headers.update({
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Referer": "https://amass.is.tue.mpg.de/download.php",
     })
 
     if cookie:
@@ -267,6 +268,17 @@ def download_file(session: requests.Session, item: dict, output_dir: Path) -> Pa
     agree_license(session, item["sfile"], item["license_file"])
 
     existing_size = out_path.stat().st_size if out_path.exists() else 0
+
+    if existing_size > 0:
+        try:
+            head_resp = session.head(url, timeout=10)
+            total_remote_size = int(head_resp.headers.get("content-length", -1))
+            if total_remote_size > 0 and existing_size == total_remote_size:
+                print(f"  Already fully downloaded: {out_path.name} ({existing_size / (1024*1024):.1f} MB)")
+                return out_path
+        except Exception:
+            pass
+
     headers = {}
     if existing_size > 0:
         headers["Range"] = f"bytes={existing_size}-"

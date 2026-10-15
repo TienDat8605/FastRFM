@@ -1,0 +1,184 @@
+[
+  {
+    "mask": "legs",
+    "seed": 0,
+    "steps": 50,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.3512474197341362e-06,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 224,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 2.0265579223632812e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "legs",
+    "seed": 0,
+    "steps": 100,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 8.173907986019913e-07,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 389,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 1.8477439880371094e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "legs",
+    "seed": 0,
+    "steps": 200,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.2593671954164165e-06,
+    "gradient_cosine": 0.9999999403953552,
+    "reconstruction": {
+      "inverse_iterations": 600,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 3.0994415283203125e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "legs",
+    "seed": 1,
+    "steps": 50,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 6.566928618667589e-07,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 231,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 1.773238182067871e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "legs",
+    "seed": 1,
+    "steps": 100,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.430798533874622e-06,
+    "gradient_cosine": 0.9999998807907104,
+    "reconstruction": {
+      "inverse_iterations": 360,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 3.0100345611572266e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "legs",
+    "seed": 1,
+    "steps": 200,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.960035206138855e-06,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 610,
+      "max_local_inverse_residual": 2.384185791015625e-07,
+      "max_anchor_drift": 5.364418029785156e-06,
+      "prefix_fallbacks": 1,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 0,
+    "steps": 50,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.164758486993378e-06,
+    "gradient_cosine": 0.9999999403953552,
+    "reconstruction": {
+      "inverse_iterations": 224,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 2.0265579223632812e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 0,
+    "steps": 100,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 7.508249950660684e-07,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 389,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 1.8477439880371094e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 0,
+    "steps": 200,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.1672841537802014e-06,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 600,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 3.0994415283203125e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 1,
+    "steps": 50,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 7.512379056606733e-07,
+    "gradient_cosine": 0.9999999403953552,
+    "reconstruction": {
+      "inverse_iterations": 231,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 1.773238182067871e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 1,
+    "steps": 100,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 1.2016344044241123e-06,
+    "gradient_cosine": 1.0000001192092896,
+    "reconstruction": {
+      "inverse_iterations": 360,
+      "max_local_inverse_residual": 1.7881393432617188e-07,
+      "max_anchor_drift": 3.0100345611572266e-06,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  },
+  {
+    "mask": "torso",
+    "seed": 1,
+    "steps": 200,
+    "source": "paired Haar hypotheses",
+    "gradient_relative_error": 9.66498305388086e-07,
+    "gradient_cosine": 1.0,
+    "reconstruction": {
+      "inverse_iterations": 610,
+      "max_local_inverse_residual": 2.384185791015625e-07,
+      "max_anchor_drift": 5.364418029785156e-06,
+      "prefix_fallbacks": 1,
+      "source_reconstruction_max_abs": 0.0
+    },
+    "passed": true
+  }
+]

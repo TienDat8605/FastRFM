@@ -1,0 +1,2 @@
+Accessed arXiv API per terms at https://info.arxiv.org/help/api/index.html. Always check the license of individual retrieved papers for any restrictions.
+Recorded at: 2026-10-11T12:43:55+07:00

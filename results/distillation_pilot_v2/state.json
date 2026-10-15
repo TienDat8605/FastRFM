@@ -1,0 +1,8 @@
+{
+  "status": "complete_exploratory_pilot",
+  "cells": 8,
+  "device": "cpu",
+  "conclusion": "Four-step distillation accelerates this CPU pilot but increases recovery error. Transported response loss has no observed downstream benefit; novelty unestablished.",
+  "checks": "19 geometry, derivative, metric, and data tests passed; code hashes verified",
+  "gpu_claims": "No T4 timing or peak-memory claim"
+}

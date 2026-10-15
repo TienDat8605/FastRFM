@@ -1,0 +1,41 @@
+# Table 2: Pose Completion Configuration
+task: "completion"
+checkpoint_path: "checkpoints/poserfm/best_model.pt"
+
+data:
+  dataset: "AMASS"
+  split: "test"
+  subsample_step: 10
+  masks:
+    - "left_leg"
+    - "legs"
+    - "arms"
+    - "torso"
+
+guidance:
+  solver:
+    method: "euler"
+    num_steps: 100
+    retraction: "last_step"
+  lr: 0.1
+  blend_alpha: 0.25
+  lambda_data: 1.0
+  lambda_traj: 1.0e-3
+  iterations:
+    arms: 300
+    others: 200
+  num_hypotheses: 10
+
+targets:
+  left_leg:
+    MPVPE_mm: 83.81
+    APD_cm: 6.02
+  legs:
+    MPVPE_mm: 95.00
+    APD_cm: 7.23
+  arms:
+    MPVPE_mm: 107.36
+    APD_cm: 5.72
+  torso:
+    MPVPE_mm: 39.75
+    APD_cm: 1.21

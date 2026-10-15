@@ -1,0 +1,9 @@
+{
+  "scripts/run_3dpw_study.py": "6c75de2a9e807629bf58af5b87e0ca205581d3b397ec8f187846a1663cd0c791",
+  "src/study/__init__.py": "24f7323f9021a6ec1b5b84b01242e843d8d121d66310cbe8c34d74f534550e6b",
+  "src/study/data.py": "a51099ba34b2c17e3213b86a2dd6d2b0f3d8366d434143ca8907a54a4ed098b9",
+  "src/study/engine.py": "f99a4b0bdbbdaa85028cfac21935568bf18b8efa30be0f9197c821bbd6b3c255",
+  "src/study/geometry.py": "818c7e92f1322fe8f6cd6ccdde3b1439034c7ca44a30c83dcb8726b0b5549737",
+  "src/study/inference.py": "f0a08db597764e68df91cd431a20be76f82c2f8a7a8529cda2390b2ea8de0d99",
+  "src/study/runtime.py": "93dce7c65da0bd715882212e1d0a87ae01c4575d411e17c315968fb039087e9a"
+}

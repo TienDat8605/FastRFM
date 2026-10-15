@@ -1,0 +1,10 @@
+{
+  "development_hours": 1.507846626143222,
+  "final_hours": 6.031386504572888,
+  "scope": "Measured batch-size benchmark extrapolation; fine-tuning and adapted-prior evaluations excluded",
+  "benchmark_seconds": {
+    "completion": 196.741900256,
+    "denoising": 160.68001564199994
+  },
+  "total_original_prior_hours": 7.539233130716109
+}

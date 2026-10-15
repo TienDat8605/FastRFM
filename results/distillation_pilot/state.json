@@ -1,0 +1,5 @@
+{
+  "status": "interrupted_invalid_setup",
+  "reason": "Teacher evaluation trajectory penalty omitted and source/mask coupling corrected in v2. No results from this preliminary directory support conclusions.",
+  "replacement": "results/distillation_pilot_v2"
+}

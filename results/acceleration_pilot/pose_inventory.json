@@ -1,0 +1,137 @@
+{
+  "AMASS": [
+    {
+      "collection": "HumanEva",
+      "dimensions": 156,
+      "files": 28,
+      "frames": 61020
+    },
+    {
+      "collection": "MPI_HDM05",
+      "dimensions": 156,
+      "files": 215,
+      "frames": 1040663
+    },
+    {
+      "collection": "MPI_mosh",
+      "dimensions": 156,
+      "files": 77,
+      "frames": 108790
+    },
+    {
+      "collection": "SFU",
+      "dimensions": 156,
+      "files": 44,
+      "frames": 109653
+    },
+    {
+      "collection": "SSM_synced",
+      "dimensions": 156,
+      "files": 30,
+      "frames": 8991
+    },
+    {
+      "collection": "Transitions_mocap",
+      "dimensions": 156,
+      "files": 110,
+      "frames": 108688
+    }
+  ],
+  "AMASS_layout": "SMPL-H 156: root 3 + body 63 + articulated hands 90. Do not interpret the first 72 coordinates as SMPL-72. PoseRFM uses poses[:,3:66].",
+  "3DPW": {
+    "train": {
+      "frames": 23543,
+      "dimensions": 72,
+      "sequences": 24,
+      "excluded_mock_files": [
+        "/home/dat/HMR/data/3dpw/sequenceFiles/train/mock_outdoor_walk.pkl"
+      ],
+      "source_sha256": {
+        "courtyard_arguing_00.pkl": "9fdfada668335d71416a97fac97a89816dd2e170cb5b0a00f1aedb0c66ab0fca",
+        "courtyard_backpack_00.pkl": "8436b097249bd51abcf27bb2b303785446749a11f00ae3a8784fa9b22a4fd980",
+        "courtyard_basketball_00.pkl": "8edadd56c3ba17d3b9585aa07458436dfb3e63d951a24b249525dc5102d42270",
+        "courtyard_bodyScannerMotions_00.pkl": "90b00543cda709be0f26d2d99ca30cb8910cbb84de5231da7e3823204499233e",
+        "courtyard_box_00.pkl": "d3e4a71275e40a269f741b6449060b4709173a9f78eefb8cd1f03a26824169b6",
+        "courtyard_capoeira_00.pkl": "451a92081fa48310b75783c1df20bc7fd8e671e1bc7ae32b328ee4a0e87b8b65",
+        "courtyard_captureSelfies_00.pkl": "079a61523d687c5fe174b3b46b0c746a4437f2b3fd3463d2157772ddbaebb9cc",
+        "courtyard_dancing_01.pkl": "a5ad048ee7adf38da448422449b2bfbd68157569f47c226c649610caaae0b00d",
+        "courtyard_giveDirections_00.pkl": "8e983e65d15ec9c9ca46c2caad207c1db68bcf9b5c28622a3e0b19cc1c371ea7",
+        "courtyard_golf_00.pkl": "d1a54557da421082be0a3d3ca6ca3242297427befc4d63847c8280030d2488c2",
+        "courtyard_goodNews_00.pkl": "37c46923de306dffdd55f64121635719bed8b31365a2ed63fe5ea6092a3ca737",
+        "courtyard_jacket_00.pkl": "d2d03a4ec5ea475bfd8a515ec2baaecf0176f471e4b228bb0ec991d475fd05c2",
+        "courtyard_laceShoe_00.pkl": "9cd55a80826b7a2be27b72a3f98a6ab1f1f5530eeef6be124bcf18be1e8685ba",
+        "courtyard_rangeOfMotions_00.pkl": "336687a0d980dfd6961ddc8ebcffe2bd6df0cbb28ee469cdc23fb0b56d4dfffe",
+        "courtyard_relaxOnBench_00.pkl": "339c4eb6303a861c9bd6539e173b518e6375215f20f315695659b0e0fb09aa70",
+        "courtyard_relaxOnBench_01.pkl": "20e9a90d722ae0428f0195fd17ac138b7df64edb7240de77812cbcbd6072768c",
+        "courtyard_shakeHands_00.pkl": "e4cdaa00359766d743c4cc7ad11c36d4feba0a9a3c79e0e2f02df7a6bb429a2f",
+        "courtyard_warmWelcome_00.pkl": "00591782ed81dad0d8d2ce11b0e9b014beed5a6f78911170dedb086ecc300c7f",
+        "outdoors_climbing_00.pkl": "59ebecac6cba14b62b7a56c3a1145f847d06591c2b1b1d30ec806beccd63a101",
+        "outdoors_climbing_01.pkl": "b9ea6572bc2718c826e7c3797e2d40267a75ab94b2adb6dbfcf7e58060b45b0b",
+        "outdoors_climbing_02.pkl": "65aa8b880516af4b19cae0dab61cfcdb26759715d759f2cfae7baa2148d3358d",
+        "outdoors_freestyle_00.pkl": "d4449380e9ba3cee059ae1b4ade75572b817d6e3934fae635b665066020e010e",
+        "outdoors_slalom_00.pkl": "9b0eda4a188120398c2712e2da32df3eb2201d32d28df2ad093fd6039f01c759",
+        "outdoors_slalom_01.pkl": "958390913d2a6dcc81aa10b99588863547ca2d48ccbea207e0d06defd796b82c"
+      }
+    },
+    "validation": {
+      "frames": 10858,
+      "dimensions": 72,
+      "sequences": 12,
+      "excluded_mock_files": [],
+      "source_sha256": {
+        "courtyard_basketball_01.pkl": "28254ae11adac5d9d9dc4edd4861d23f059da24b6a76074dad9e5e03071a7249",
+        "courtyard_dancing_00.pkl": "8992c28484e486f3ad1c3bc3c86aaf2ef23f48c6271e3a89f100506f5608d428",
+        "courtyard_drinking_00.pkl": "34b2bf62dc33ae9835e885bcfcd991b60a964ad37909a36ca1b1f42e422abd13",
+        "courtyard_hug_00.pkl": "3bb5370ac32315c5d1c6bb20ee01ef672305f1bba4f7485122370d26d075d94f",
+        "courtyard_jumpBench_01.pkl": "de8595b56175c85d62c0fa33d0dec26f0182df48d356ba3ade2edc95fe8d1822",
+        "courtyard_rangeOfMotions_01.pkl": "e1228dc5d29acaf58adaa054d757a54a9d5cffdfcca28ec2f5743713bfa6d0b4",
+        "downtown_walkDownhill_00.pkl": "306955fd9e630113ef5cf1107179a6de3c2df2721870bef1e5f00a393cf793a3",
+        "outdoors_crosscountry_00.pkl": "ef5a56b5bc77950d9e5c1db3ca5895231473ac0dd97a82e80c40968a17f98920",
+        "outdoors_freestyle_01.pkl": "e718a9557803b7e20ecd09da7371e9aae789358765517f195a7fce914eee2f3d",
+        "outdoors_golf_00.pkl": "9e53109586697c8d233e60cf13fcd12a185fc54c6bf4fb2f401e42a7d5b37ae4",
+        "outdoors_parcours_00.pkl": "3453b16855f0cec91f683d3b38959b44c8a0b343df1ddd15bacdd8d6e1dea41c",
+        "outdoors_parcours_01.pkl": "bd4087d8261887edc7a33e002411b788b50bc6f1fe0ce221e142795dd81ca55a"
+      }
+    },
+    "test": {
+      "frames": 40219,
+      "dimensions": 72,
+      "sequences": 24,
+      "excluded_mock_files": [],
+      "source_sha256": {
+        "downtown_arguing_00.pkl": "a07b78633be21b74835a5dee09aa75e3d804ec959bf3d8af87cd812372e13eab",
+        "downtown_bar_00.pkl": "8d8114704f0e38318cea10c24445b8803979c09f46cfd203039158d27ab8e36a",
+        "downtown_bus_00.pkl": "ce36524763d93316f6ae4850c8319b1492a29fa35ff0bc0006eed2c3650979ea",
+        "downtown_cafe_00.pkl": "2e2767563b17d499eed814b78fb838ae917994412fb7145230a7e21d620dab4f",
+        "downtown_car_00.pkl": "1fa69f8718609ddcdbbf9e3a43635939754ef2b8656530f4637319382813fcb1",
+        "downtown_crossStreets_00.pkl": "85958464131673a7dbc1a0dc3a8e36ec2704df20ed7e107fb7b85d8df9c8f2db",
+        "downtown_downstairs_00.pkl": "34a07aafa426d2c146630c3d5b35c34c6f500234157cdad3fbc9bd7adef77f88",
+        "downtown_enterShop_00.pkl": "8e356ea20adec853d73c771c161349b0a45388171b47c9fbf94d2625c10fc2fa",
+        "downtown_rampAndStairs_00.pkl": "dd41a88b524b44025e2313c6cd6eef3528a421680c72fa24128a064dbfc87b54",
+        "downtown_runForBus_00.pkl": "168592bd5e2e55362fca250fbec19ac13d8e407d3568fbac784e248380512b63",
+        "downtown_runForBus_01.pkl": "36afbea7a0f5cb33985a8098a56084c14a8bee450e8730b3b5fedee13ad9acf2",
+        "downtown_sitOnStairs_00.pkl": "bec91d006b41bfd11f8c08baabb06d3afbcc9d2d42a4c4f6d681be061c2c1b1c",
+        "downtown_stairs_00.pkl": "8779fc67ede847fc6ccc4dd99bc3306cd89fe14a44cf3c616efc1043bd6c43ae",
+        "downtown_upstairs_00.pkl": "7cd8d8e63774298e44f94b7f6f24339abe7f700471e66571c1103dff59657a40",
+        "downtown_walkBridge_01.pkl": "08725623515f158e4c51a86adc7a2419169949fff83a1d905dd5649d7400bd36",
+        "downtown_walkUphill_00.pkl": "934b233cfd7b95287279ba9bc31d0b62c28c489eb9b827d330a1447c5ceb6fd3",
+        "downtown_walking_00.pkl": "86531a18268516cfef6b2c03388b3704f3c9f2c6db9f4192504cc1b419f42da3",
+        "downtown_warmWelcome_00.pkl": "a3a9e62181d3991194edfc3dc15cfaf8cc0f001ea79e21729cd3e30532161640",
+        "downtown_weeklyMarket_00.pkl": "e06a331a501858fa40bc48be4acefcb57276f86164f2d9f9d44e73fc98662387",
+        "downtown_windowShopping_00.pkl": "c50cacf588644504b4a702288a33f8aa4fde6582f5ed986d6c75d9249134c920",
+        "flat_guitar_01.pkl": "ab43e4cc8589aff83eb661654ef5f1136653ea15c1c691d73d57b4b7093c641a",
+        "flat_packBags_00.pkl": "81dd25544229b0228ca1c42321319fddc22f57471821a4073977adf207f8f2c4",
+        "office_phoneCall_00.pkl": "8401e305de602693d6d7a64e90a3e3db335b7cfd8f467457ec780c7e4ec3d1c2",
+        "outdoors_fencing_01.pkl": "0ef556494ef3a8df9d25aebccf606af33c4b610fc01c069b4c380b1551ae4f07"
+      }
+    }
+  },
+  "exports": [
+    {
+      "path": "data/pose_arrays/3dpw_train_smpl72.npz",
+      "sha256": "4232b53a45d3103e51352f5c0e0c58a48c7faec841837840b4c6157d1c32279d",
+      "bytes": 6384728,
+      "layout": "Original 24-joint axis-angle SMPL poses, including root and hand joints; radians"
+    }
+  ]
+}

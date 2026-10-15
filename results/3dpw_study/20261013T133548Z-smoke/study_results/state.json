@@ -1,0 +1,8 @@
+{
+  "status": "failed",
+  "command": "smoke",
+  "started_utc": 1791899243.7433248,
+  "message": "CalledProcessError(1, ['/usr/bin/python3', '-m', 'unittest', 'discover', '-s', '/content/posedflow/study/tests', '-p', 'test_study_*.py', '-v'])",
+  "finished_utc": 1791899247.8509543,
+  "original_checkpoint_sha256": "2b2bbbc57f5c3f9f59bb83c7c575d0390914af3c197f0f6a41cd2c743e04ec04"
+}

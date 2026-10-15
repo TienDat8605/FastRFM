@@ -1,0 +1,11 @@
+{
+  "phase": "failed",
+  "confirmation_complete": true,
+  "elapsed_seconds": 5712.176698393,
+  "cache_completed_samples": 5120,
+  "cache_remaining_forecast_seconds": 0.0,
+  "remaining_recipe_forecast_seconds": 0.0,
+  "last_recipe_seconds": 544.172157687,
+  "confirmation_forecast_seconds": 1300.5450893796021,
+  "reason": "TypeError('Object of type bool is not JSON serializable')"
+}

@@ -1,0 +1,8 @@
+{
+  "status": "complete",
+  "command": "benchmark",
+  "started_utc": 1791901784.4569995,
+  "failed_cells": 0,
+  "finished_utc": 1791902153.3189156,
+  "original_checkpoint_sha256": "2b2bbbc57f5c3f9f59bb83c7c575d0390914af3c197f0f6a41cd2c743e04ec04"
+}

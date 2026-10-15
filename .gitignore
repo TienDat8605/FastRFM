@@ -4,8 +4,34 @@ __pycache__/
 *.so
 .pytest_cache/
 checkpoints/
+models/
+SMPL_python_v.1.1.0.zip
+models_smplx_v1_1.zip
 data/raw_*
-results/
+# Keep research reports, measurements, and run configurations; omit runtime payloads.
+results/**
+!results/**/
+!results/**/*.md
+!results/**/*.markdown
+!results/**/*.txt
+!results/**/*.json
+!results/**/*.csv
+!results/**/*.yaml
+!results/**/*.yml
+!results/**/*.pdf
+!results/**/*.png
+!results/**/*.py
+!results/**/*.sh
+data/downloads/
+# Local credentials and machine configuration.
+.env
+.env.*
+!.env.example
+.aws/
+.codex/
+.agents/
+*.pem
+*.key
 *.pt
 *.pth
 .eggs/

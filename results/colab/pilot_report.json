@@ -1,0 +1,174 @@
+{
+  "scope": "setup validation and 8-pose left-leg pilot; not paper reproduction",
+  "gpu": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "manifest": {
+    "scope": "3DPW poses and AMASS pose-only inputs; images excluded",
+    "splits": {
+      "train": {
+        "person_frames": 23553,
+        "sequences": 25
+      },
+      "validation": {
+        "person_frames": 10858,
+        "sequences": 12
+      },
+      "test": {
+        "person_frames": 40219,
+        "sequences": 24
+      }
+    },
+    "amass_files": 504
+  },
+  "body_models": {
+    "smpl_neutral": {
+      "vertices": [
+        1,
+        6890,
+        3
+      ],
+      "joints": [
+        1,
+        45,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    },
+    "smpl_male": {
+      "vertices": [
+        1,
+        6890,
+        3
+      ],
+      "joints": [
+        1,
+        45,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    },
+    "smpl_female": {
+      "vertices": [
+        1,
+        6890,
+        3
+      ],
+      "joints": [
+        1,
+        45,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    },
+    "smplx_neutral": {
+      "vertices": [
+        1,
+        10475,
+        3
+      ],
+      "joints": [
+        1,
+        127,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    },
+    "smplx_male": {
+      "vertices": [
+        1,
+        10475,
+        3
+      ],
+      "joints": [
+        1,
+        127,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    },
+    "smplx_female": {
+      "vertices": [
+        1,
+        10475,
+        3
+      ],
+      "joints": [
+        1,
+        127,
+        3
+      ],
+      "finite_forward_and_gradient": true
+    }
+  },
+  "checkpoint": {
+    "epoch": 38,
+    "val_loss": 0.4316308158774709,
+    "args": {
+      "train_dir": "data/3dpw/sequenceFiles/train",
+      "val_dir": "data/3dpw/sequenceFiles/validation",
+      "output_dir": "results/posed_flow",
+      "hidden_dim": 512,
+      "time_embed_dim": 64,
+      "num_layers": 4,
+      "epochs": 40,
+      "batch_size": 256,
+      "lr": 0.001,
+      "weight_decay": 0.0001,
+      "val_interval": 1,
+      "log_interval": 5,
+      "seed": 42,
+      "device": "cpu"
+    }
+  },
+  "completion_pilot": {
+    "poses": 8,
+    "hypotheses": 1,
+    "ode_steps": 10,
+    "iterations": 25,
+    "initialization": "mean-filled observed pose used directly as source",
+    "optimizer": "Adam in fixed exponential chart; reconstruction choice",
+    "trajectory_penalty": false,
+    "mean_fill_occluded_mpjpe_mm": 66.44059753417969,
+    "guided_occluded_mpjpe_mm": 72.88198852539062,
+    "visible_error_before_replacement_rad": 0.10735362768173218,
+    "elapsed_seconds": 1.2340257979999478,
+    "peak_allocated_vram_mib": 68.4189453125,
+    "loss_history": [
+      0.0478745773434639,
+      0.045114483684301376,
+      0.04271375387907028,
+      0.04060639068484306,
+      0.03873550519347191,
+      0.03705552965402603,
+      0.03552981838583946,
+      0.034128766506910324,
+      0.03282841667532921,
+      0.03160928189754486,
+      0.03045555390417576,
+      0.029354393482208252,
+      0.02829534187912941,
+      0.027269858866930008,
+      0.026270797476172447,
+      0.02529197186231613,
+      0.02432752400636673,
+      0.023370729759335518,
+      0.022410757839679718,
+      0.021424412727355957,
+      0.02039198949933052,
+      0.01999649591743946,
+      0.019145317375659943,
+      0.018119394779205322,
+      0.01731647551059723
+    ],
+    "test_indices": [
+      0,
+      1796,
+      4602,
+      8958,
+      11360,
+      13400,
+      14576,
+      15433
+    ]
+  }
+}

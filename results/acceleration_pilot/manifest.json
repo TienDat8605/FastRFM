@@ -1,0 +1,49 @@
+{
+  "scope": "Exploratory legs completion on 3DPW validation only; not full reproduction",
+  "device": "cpu",
+  "platform": "Linux-7.2.9-201.fc44.x86_64-x86_64-with-glibc2.43",
+  "torch": "2.6.0",
+  "cpu_threads": 1,
+  "checkpoint_sha256": "2b2bbbc57f5c3f9f59bb83c7c575d0390914af3c197f0f6a41cd2c743e04ec04",
+  "checkpoint_epoch": 38,
+  "parameters": 1212991,
+  "validation_sha256": "fa8eef177fd0d37e3e8a7676f27a689640a3b319cde3bc92ed2e03af2f6946c2",
+  "body_sha256": "4924f235e63f7c5d5b690acedf736419c2edb846a2d69fc0956169615fa75688",
+  "ids": [
+    6625,
+    7870,
+    5798,
+    7416,
+    80,
+    7809,
+    4952,
+    4298
+  ],
+  "sequences": [
+    "downtown_walkDownhill_00",
+    "outdoors_parcours_00",
+    "courtyard_rangeOfMotions_01",
+    "outdoors_freestyle_01",
+    "courtyard_basketball_01",
+    "outdoors_golf_00",
+    "courtyard_jumpBench_01",
+    "courtyard_hug_00"
+  ],
+  "hypotheses": 2,
+  "seeds": [
+    0,
+    1
+  ],
+  "iterations": 200,
+  "initialization_steps": 100,
+  "trajectory_weight": 0.001,
+  "step_sweep_weight": "lambda_N=.001*100/N; approximate quadrature parity",
+  "caveats": [
+    "Existing residual/time-embedding HMR prior, not paper MLP",
+    "Single measured batch per seed; no statistical speed guarantee",
+    "Shared 100-step backward initialization included in end-to-end times",
+    "APD based on only two hypotheses",
+    "No physical plausibility evaluator",
+    "Saved tensor payload counts saves, not unique storage or peak VRAM"
+  ]
+}

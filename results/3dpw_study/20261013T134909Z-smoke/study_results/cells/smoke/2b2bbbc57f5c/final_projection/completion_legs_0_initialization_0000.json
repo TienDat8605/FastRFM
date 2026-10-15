@@ -1,0 +1,159 @@
+{
+  "status": "complete",
+  "checkpoint_sha256": "2b2bbbc57f5c3f9f59bb83c7c575d0390914af3c197f0f6a41cd2c743e04ec04",
+  "checkpoint_epoch": 38,
+  "body_sha256": "4924f235e63f7c5d5b690acedf736419c2edb846a2d69fc0956169615fa75688",
+  "cohort": "smoke",
+  "task": "completion",
+  "condition": "legs",
+  "seed": 0,
+  "method": "initialization",
+  "solver": "final_projection",
+  "ode_steps": 100,
+  "config": {
+    "study": "posedflow_3dpw_v1",
+    "seed": 42,
+    "inference_seeds": [
+      0,
+      1,
+      2
+    ],
+    "budget_hours": 8,
+    "device": "cuda",
+    "ode_steps": 100,
+    "solver": "final_projection",
+    "development": {
+      "poses": 48,
+      "segments": 12
+    },
+    "final": {
+      "poses": 240,
+      "segments": 60
+    },
+    "smoke": {
+      "poses": 2,
+      "segments": 1
+    },
+    "completion": {
+      "hypotheses": 10,
+      "batch_poses": 2,
+      "lr": 0.1,
+      "alpha": 0.25,
+      "trajectory_weight": 0.001,
+      "iterations": 200,
+      "arms_iterations": 300,
+      "masks": {
+        "left_leg": [
+          0,
+          3,
+          6,
+          9
+        ],
+        "legs": [
+          0,
+          1,
+          3,
+          4,
+          6,
+          7,
+          9,
+          10
+        ],
+        "arms": [
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "torso": [
+          2,
+          5,
+          8,
+          15,
+          16
+        ]
+      }
+    },
+    "denoising": {
+      "segment_frames": 60,
+      "fps": 30,
+      "sigmas_m": [
+        0.04,
+        0.1
+      ],
+      "lr": 0.25,
+      "alpha": 0.75,
+      "trajectory_weight": 1e-05,
+      "iterations": [
+        300,
+        400
+      ],
+      "temporal_weights": [
+        0.01,
+        0.1
+      ],
+      "initialization_iterations": 100,
+      "initialization_lr": 0.05
+    },
+    "finetuning": {
+      "steps": 4000,
+      "batch_size": 256,
+      "lr": 0.0001,
+      "weight_decay": 0.0001,
+      "ema": 0.99,
+      "validation_interval": 250,
+      "validation_poses": 512,
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "trigger_relative_gain": 0.05
+    },
+    "bootstrap_samples": 2000
+  },
+  "reconstruction": [
+    "3DPW residual/time-embedding architecture",
+    "neutral zero-shape targets",
+    "SMPL dominant-skinning vertex regions",
+    "SO(3)-factor scalar Adam second moment",
+    "loss averages over poses/frames"
+  ],
+  "rows": [
+    {
+      "case": 6625,
+      "sequence": "downtown_walkDownhill_00",
+      "person": 0,
+      "frame": 350,
+      "mpvpe_mm": 63.40349197387695,
+      "mpjpe_mm": 56.96367263793945,
+      "apd_cm": 4.1478118896484375,
+      "visible_rad": 0.13475053012371063,
+      "forward_network_evaluations_per_hypothesis": 200,
+      "backpropagated_ode_steps_per_hypothesis": 0,
+      "seed": 0
+    },
+    {
+      "case": 7870,
+      "sequence": "outdoors_parcours_00",
+      "person": 0,
+      "frame": 0,
+      "mpvpe_mm": 155.4340362548828,
+      "mpjpe_mm": 141.12353515625,
+      "apd_cm": 8.807172775268555,
+      "visible_rad": 0.29457107186317444,
+      "forward_network_evaluations_per_hypothesis": 200,
+      "backpropagated_ode_steps_per_hypothesis": 0,
+      "seed": 0
+    }
+  ],
+  "timing": {
+    "seconds": 0.254058973000042,
+    "peak_allocated_mib": 73.35205078125
+  },
+  "predictions": "cells/smoke/2b2bbbc57f5c/final_projection/completion_legs_0_initialization_0000.pt"
+}

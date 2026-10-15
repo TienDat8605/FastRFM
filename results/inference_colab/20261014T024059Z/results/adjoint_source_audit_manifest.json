@@ -1,0 +1,15 @@
+{
+  "source_sha256": "dbdb67562c5138627f837b0024d80e0c2ca2804cece4261b0604adb8aab8c5a2",
+  "teacher_sha256": "2220e27e83de3090208b497258a476c6192e3bbec63c97cf50014ccbfdacbabf",
+  "validation_ids": [
+    6625,
+    7870
+  ],
+  "probe_hypotheses": 4,
+  "includes_running_cost": true,
+  "gate": {
+    "relative_error": 0.01,
+    "cosine": 0.999
+  },
+  "all_passed": true
+}

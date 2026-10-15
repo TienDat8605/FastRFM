@@ -1,0 +1,114 @@
+\begin{thebibliography}{10}
+
+\bibitem{benhamu2024dflow}
+Heli Ben-Hamu et~al.
+\newblock D-flow: Differentiating through flows for controlled generation.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2024.
+
+\bibitem{bogo2016keep}
+Federica Bogo, Angjoo Kanazawa, Christoph Lassner, Peter Gehler, Volker Blanz,
+  and Michael~J Black.
+\newblock Keep it {SMPL}: Automatic estimation of {3D} human pose and shape
+  from a single image.
+\newblock {\em European Conference on Computer Vision (ECCV)}, 2016.
+
+\bibitem{bose2023se3}
+Avishek Bose et~al.
+\newblock {SE(3)}-stochastic flow matching for protein backbone generation.
+\newblock {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2023.
+
+\bibitem{chen2023riemannian}
+Ricky T.~Q. Chen and Yaron Lipman.
+\newblock Flow matching on general geometries.
+\newblock {\em International Conference on Machine Learning (ICML)}, 2023.
+
+\bibitem{choi2023dposer}
+Junuk Choi et~al.
+\newblock {DPoser}: Diffusion models for {3D} human pose denoising and
+  completion.
+\newblock {\em IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2023.
+
+\bibitem{lipman2023flow}
+Yaron Lipman, Ricky T.~Q. Chen, Heli Ben-Hamu, Maximilian Nicklas, and Matt Le.
+\newblock Flow matching for generative modeling.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2023.
+
+\bibitem{loper2015smpl}
+Matthew Loper, Naureen Mahmood, Javier Romero, Gerard Pons-Moll, and Michael~J
+  Black.
+\newblock {SMPL}: A skinned multi-person linear model.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 34(6):248, 2015.
+
+\bibitem{mahmood2019amass}
+Naureen Mahmood, Nima Ghorbani, Nikolaus~F Troje, Gerard Pons-Moll, and
+  Michael~J Black.
+\newblock {AMASS}: Archive of motion capture as surface shapes.
+\newblock {\em IEEE/CVF International Conference on Computer Vision (ICCV)},
+  2019.
+
+\bibitem{miller2024flowmm}
+Benjamin Miller et~al.
+\newblock Generating materials with riemannian flow matching.
+\newblock {\em International Conference on Machine Learning (ICML)}, 2024.
+
+\bibitem{nadar2026posedflow}
+Jebastin Nadar, Simone Foti, and Tolga Birdal.
+\newblock Posed-flow: Versatile and guided flow matching model of human pose.
+\newblock {\em IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2026.
+
+\bibitem{pavlakos2019expressive}
+Georgios Pavlakos, Vasileios Choutas, Nima Ghorbani, Timo Bolkart, Ahmed A.~A.
+  Osman, Dimitrios Tzionas, and Michael~J. Black.
+\newblock Expressive body capture: {3D} hands, face, and body from a single
+  image.
+\newblock {\em IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2019.
+
+\bibitem{song2023improved}
+Yang Song and Prafulla Dhariwal.
+\newblock Improved techniques for training consistency models.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2024.
+
+\bibitem{song2023consistency}
+Yang Song, Prafulla Dhariwal, Mark Chen, and Ilya Sutskever.
+\newblock Consistency models.
+\newblock {\em International Conference on Machine Learning (ICML)}, 2023.
+
+\bibitem{tevet2022human}
+Guy Tevet, Sigal Raab, Brian Gordon, Yonatan Shafir, Daniel Cohen-Or, and
+  Amit~H Bermano.
+\newblock Human motion diffusion model.
+\newblock {\em International Conference on Learning Representations (ICLR)},
+  2023.
+
+\bibitem{von2018recovering}
+Timo von Marcard, Roberto Henschel, Michael~J Black, Bodo Rosenhahn, and Gerard
+  Pons-Moll.
+\newblock Recovering accurate {3D} human pose in the wild using {IMUs} and a
+  moving camera.
+\newblock {\em European Conference on Computer Vision (ECCV)}, 2018.
+
+\bibitem{yim2023fast}
+Jason Yim et~al.
+\newblock Fast protein backbone generation with {SE(3)} flow matching.
+\newblock {\em International Conference on Machine Learning (ICML)}, 2023.
+
+\bibitem{zhou2019continuity}
+Yi~Zhou, Connelly Barnes, Jingwan Lu, Jimei Yang, and Hao Li.
+\newblock On the continuity of rotation representations in neural networks.
+\newblock {\em IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  (CVPR)}, 2019.
+
+\bibitem{zhou2025rcm}
+Yufeng Zhou, Yang Cheng, et~al.
+\newblock Riemannian consistency models.
+\newblock {\em Advances in Neural Information Processing Systems (NeurIPS)},
+  2025.
+
+\end{thebibliography}

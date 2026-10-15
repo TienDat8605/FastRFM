@@ -1,0 +1,10 @@
+{
+  "random_0.001_seed0": 750,
+  "endpoint_0_seed0": 750,
+  "random_0.01_seed0": 750,
+  "random_0.1_seed0": 1250,
+  "task_0.001_seed0": 750,
+  "task_0.01_seed0": 750,
+  "task_0.1_seed0": 1000,
+  "task_0.001_seed1": 1500
+}

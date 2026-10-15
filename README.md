@@ -1,4 +1,40 @@
-# PoseD-Flow (CVPR 2026) Reproduction Workspace
+# FastRFM
+
+Research workspace for accelerating Riemannian flow matching and guided human
+pose inference, including the PoseD-Flow reproduction framework, experimental
+code, proposals, hypotheses, manuscript drafts, reference papers, and reports.
+
+## Research documents
+
+- [Reproduction plan](PLAN.md) and [preparation checklist](TODO.md)
+- [Acceleration proposals and hypotheses](protocol/acceleration_blueprint.md)
+- [Acceleration pilot](protocol/acceleration_pilot.md)
+- [Guidance-aware manifold distillation hypothesis](protocol/riemannian_consistency_distillation.md)
+- [Exact-pullback four-step screening protocol](protocol/pullback_screen.md)
+- [Colab inference study](protocol/inference_colab.md) and [3DPW study](protocol/study_3dpw.md)
+- [Manuscript draft](papers/fast_riemannian_dflow_draft.md),
+  [LaTeX source](papers/fast_riemannian_dflow.tex), and
+  [PDF](papers/fast_riemannian_dflow.pdf)
+- [Reference paper catalog](papers/README.md)
+- Experiment reports and measurements under `results/`
+
+Proposals and projected speedups are research hypotheses; consult the experiment
+reports for measured outcomes and limitations. Dataset downloads, licensed body
+models, checkpoints, and runtime archives remain local. Preparation scripts and
+protocols document how to obtain inputs and reproduce runs.
+
+## PoseD-Flow reproduction workspace
+
+Active follow-up: [exact-pullback four-step screening](protocol/pullback_screen.md),
+via `posed_flow_colab_poc.py --mode pullback_screen`, with frozen sequence-disjoint
+confirmation and a four-hour T4 budget.
+
+Current work: [Colab SSH inference acceleration](protocol/inference_colab.md),
+using `posed_flow_colab_poc.py --mode inference` to compare two/four-step
+midpoint shortcut students with full-graph and fixed-anchor discrete adjoints.
+The original 3DPW runtime was stopped at the user's request; partial outputs
+are archived locally. This small-data GPU PoC is distinct from full-paper
+reproduction. Results are downloaded under `results/inference_colab/`.
 
 This repository implements the complete reproduction framework for **PoseD-Flow** (CVPR 2026): *Versatile and Guided Flow Matching Model of Human Pose* (Jebastin Nadar, Simone Foti, Tolga Birdal).
 

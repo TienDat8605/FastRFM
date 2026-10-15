@@ -1,0 +1,442 @@
+<!DOCTYPE html><html><head><title>AMASS</title><meta name="csrf-param" content="authenticity_token"/><meta name="csrf-token" content="HguP2affJzIDogcJFPelIDPZWZXa8ik7o9B4CpjxsOGtvHOiYV1x90Rn2g6KAUxewvU7uHrfPLhy5B0ky/ThTg=="/><meta name="turbolinks-cache-control" content="no-cache"><meta name="keywords" content=""><meta name="description" content=""><meta name="author" content="Jonathan Williams"><meta property="og:title" content="AMASS"/><meta property="og:description" content=""/><meta property="og:type" content="website"/><meta property="og:url" content="https://amass.is.tue.mpg.de"/><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><link rel="stylesheet" media="all" href="skin/default_tracking_popup/default.css" data-turbolinks-track="reload"/><!-- Global site tag (gtag.js) - Google Analytics --> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143926561-2"></script> <script>   window.dataLayer = window.dataLayer || [];   function gtag(){dataLayer.push(arguments);}   gtag('js', new Date());    gtag('config', 'UA-143926561-2'); </script>
+</head><body><div class="d-block d-lg-none"><nav id="menu" class="menu"><section class="menu-section"><ul class="menu-section-list"><li class="mobile-menu-breaker-bottom"><a class="page-scroll" href="index.html">Home</a></li><li class="mobile-menu-breaker-bottom"><a class="page-scroll" href="news.html">News</a></li><li class="mobile-menu-breaker-bottom"><a class="page-scroll" href="download.php">Downloads</a></li><li class="mobile-menu-breaker-bottom"><a class="page-scroll" href="license.html">License</a></li><li class="mobile-menu-breaker-bottom"><a class="page-scroll" href="extra.php">Extra</a></li></ul></section></nav></div><header class="header-wrapper fixed"><div class="fixed-top"><nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light ewt-navbar "><div class="container"><a href="index.html" id="header-logo" class="d-none d-lg-block d-xl-block navbar-brand header-logo-text no-link ">AMASS</a><a href="index.html" id="header-logo" class="d-block d-lg-none navbar-brand header-logo-text no-link">AMASS</a><div class="navbar-collapse ewt-navbar-collapse" id="navbarCollapse"><div class="ml-auto d-none d-lg-block"><ul class="navbar-nav ml-auto"><li id="nav-item" class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li id="nav-item" class="nav-item"><a class="nav-link" href="news.html">News</a></li><li id="nav-item" class="nav-item"><a class="nav-link" href="download.php">Downloads</a></li><li id="nav-item" class="nav-item"><a class="nav-link" href="license.html">License</a></li><li id="nav-item" class="nav-item"><a class="nav-link" href="extra.php">Extra</a></li>
+<div id="div_login1"><a id="header-auth-btn" class="btn btn-sm btn-header btn-header" href="login.php">Sign In</a></div><div id="div_logout1" style="display:none"><a id="header-auth-btn" class="btn btn-sm btn-header btn-header" href="logout.php">Logout</a></div></ul></div><ul class="nav ml-auto d-lg-none pull-right"><li><button type="button" class="js-slideout-toggle btn btn-mobile-menu" ><i class="fas fa-bars"></i></button></li></ul></div></div></nav></div></header><main id="main" class="panel main-panel"><div class="section-top d-lg-none"></div><div class="section section-top section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"></div></div><div class="section section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"><h5><strong>Legend</strong></h5>
+<table style="border-collapse: collapse; width: 99.7783%;" border="1">
+<tbody>
+<tr>
+<td style="width: 99.9444%;"><strong>SMPL+H</strong>: <a href="https://smpl.is.tue.mpg.de">SMPL</a> body model + <a href="https://mano.is.tue.mpg.de/">MANO</a> hand model (52 joints, 6890 vertices)</td>
+</tr>
+<tr>
+<td style="width: 99.9444%;"><a href="https://smpl-x.is.tue.mpg.de"><strong>SMPL-X</strong></a>: body model including hands and facial expressions (55 joints, 10475 vertices)</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<table style="border-collapse: collapse; width: 99.7783%; height: 58px;" border="1">
+<tbody>
+<tr style="height: 29px;">
+<td style="width: 99.9444%; height: 29px;"><strong>G</strong>: gendered (male and female models)</td>
+</tr>
+<tr style="height: 29px;">
+<td style="width: 99.9444%; height: 29px;"><strong>N</strong>: neutral (a single model that can represent male and female body shapes)</td>
+</tr>
+</tbody>
+</table></div></div><div class="section section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"><hr />
+<h5>To cite the AMASS dataset in its entirety, please include the following references in your project:</h5>
+<p><a href="https://download.is.tue.mpg.de/amass/amass.bib">amass.bib</a></p></div></div><div class="section section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"><table class="table table-downloads table-hover table-condensed only-col1" style="height: 277px; width: 110%; margin-left: auto; margin-right: auto;">
+<thead>
+<tr style="height: 143px;">
+<th style="height: 76px; text-align: center; vertical-align: middle; line-height: 1; width: 6%;">&nbsp;</th>
+<th style="height: 76px; text-align: center; vertical-align: middle; line-height: 1; width: 8%;">Subjects</th>
+<th style="height: 76px; text-align: center; vertical-align: middle; line-height: 1; width: 6%;">Motions</th>
+<th style="height: 76px; text-align: center; vertical-align: middle; line-height: 1; width: 3%;">Minutes</th>
+<th style="text-align: center; vertical-align: middle; line-height: 1; width: 1.5%;">Required Citation</th>
+<th style="text-align: center; vertical-align: middle; line-height: 1; width: 1.5%;">License</th>
+<th style="height: 76px; text-align: center; vertical-align: middle; line-height: 1; width: 74%;">Bodies</th>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="Advaced Computing Center for the Arts and Design" href="https://accad.osu.edu/research/motion-lab/system-data" target="_blank" rel="noopener">ACCAD</a></p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">20</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">252</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">26.74</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/ACCAD/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/ACCAD/accad_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/ACCAD.tar.bz2', 'licenses2024/ACCAD/accad_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/ACCAD.tar.bz2', 'licenses2024/ACCAD/accad_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/ACCAD.tar.bz2', 'licenses2024/ACCAD/accad_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/ACCADrenders.tar.bz2', 'licenses2024/ACCAD/accad_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="None" href="http://www.biomotionlab.ca/" target="_blank" rel="noopener">BMLhandball</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">10</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">649</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">101.98</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLhandball/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLhandball/bmlhandball_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/BMLhandball.tar.bz2', 'licenses2024/BMLhandball/bmlhandball_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/BMLhandballrenders.tar.bz2', 'licenses2024/BMLhandball/bmlhandball_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="None" href="http://www.biomotionlab.ca/movi/" target="_blank" rel="noopener">BMLmovi</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">89</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">1864</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">174.39</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLmovi/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLmovi/bmlmovi_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/BMLmovi.tar.bz2', 'licenses2024/BMLmovi/bmlmovi_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/BMLmovi.tar.bz2', 'licenses2024/BMLmovi/bmlmovi_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/BMLmovi.tar.bz2', 'licenses2024/BMLmovi/bmlmovi_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/BMLmovirenders.tar.bz2', 'licenses2024/BMLmovi/bmlmovi_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Bio Motion Lab" href="https://www.biomotionlab.ca/" target="_blank" rel="noopener">BMLrub</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">111</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">3061</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">522.69</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLrub/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/BMLrub/bmlrub_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/BMLrub.tar.bz2', 'licenses2024/BMLrub/bmlrub_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/BMLrub.tar.bz2', 'licenses2024/BMLrub/bmlrub_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/BMLrub.tar.bz2', 'licenses2024/BMLrub/bmlrub_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/BMLrubrenders.tar.bz2', 'licenses2024/BMLrub/bmlrub_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Carnegie Mellon University" href="http://mocap.cs.cmu.edu" target="_blank" rel="noopener">CMU</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">96</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">1983</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">543.49</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/CMU/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/CMU/cmu_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/CMU.tar.bz2', 'licenses2024/CMU/cmu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/CMU.tar.bz2', 'licenses2024/CMU/cmu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/CMU.tar.bz2', 'licenses2024/CMU/cmu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/CMUrenders.tar.bz2', 'licenses2024/CMU/cmu_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="French National Centre for Scientific Research" href="https://motion-database.humanoids.kit.edu/" target="_blank" rel="noopener">CNRS</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">2</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">79</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">9.61</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/CNRS/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/CNRS/cnrs_kit_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/CNRS.tar.bz2', 'licenses2024/CNRS/cnrs_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/CNRS.tar.bz2', 'licenses2024/CNRS/cnrs_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mp4_renders/CNRSrenders.tar.bz2', 'licenses2024/CNRS/cnrs_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Dance Motion Capture Database of the University of Cyprus" href="https://dancedb.cs.ucy.ac.cy/" target="_blank" rel="noopener">DanceDB</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">20</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">151</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">203.38</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/DanceDB/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/DanceDB/dancedb_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/DanceDB.tar.bz2', 'licenses2024/DanceDB/dancedb_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/DanceDB.tar.bz2', 'licenses2024/DanceDB/dancedb_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/DanceDBrenders.tar.bz2', 'licenses2024/DanceDB/dancedb_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="MPI Dynamic FAUST" href="https://dfaust.is.tue.mpg.de/" target="_blank" rel="noopener">DFaust</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">10</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">129</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">5.72</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/DFaust/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/DFaust/dfaust_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/DFaust.tar.bz2', 'licenses2024/DFaust/dfaust_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/DFaust.tar.bz2', 'licenses2024/DFaust/dfaust_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/DFaust.tar.bz2', 'licenses2024/DFaust/dfaust_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/DFaustrenders.tar.bz2', 'licenses2024/DFaust/dfaust_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Eberhard Karls Universitat Tuebingen" href="https://motion-database.humanoids.kit.edu/" target="_blank" rel="noopener">EKUT</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">4</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">349</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">30.74</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/EKUT/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/EKUT/ekut_kit_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/EKUT.tar.bz2', 'licenses2024/EKUT/ekut_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/EKUT.tar.bz2', 'licenses2024/EKUT/ekut_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/EKUT.tar.bz2', 'licenses2024/EKUT/ekut_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/EKUTrenders.tar.bz2', 'licenses2024/EKUT/ekut_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Eyes, JAPAN Co. Ltd." href="http://mocapdata.com/" target="_blank" rel="noopener">EyesJapanDataset</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">12</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">750</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">397.04</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/EyesJapanDataset/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/EyesJapanDataset/eyesjapandataset_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/EyesJapanDataset.tar.bz2', 'licenses2024/EyesJapanDataset/eyesjapandataset_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/EyesJapanDataset.tar.bz2', 'licenses2024/EyesJapanDataset/eyesjapandataset_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/EyesJapanDataset.tar.bz2', 'licenses2024/EyesJapanDataset/eyesjapandataset_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/EyesJapanDatasetrenders.tar.bz2', 'licenses2024/EyesJapanDataset/eyesjapandataset_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="None" href="https://grab.is.tue.mpg.de/" target="_blank" rel="noopener">GRAB</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">10</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">1340</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">226.59</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/GRAB/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/GRAB/grab_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/GRAB.tar.bz2', 'licenses2024/GRAB/grab_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/neutral/mosh_results/GRAB.tar.bz2', 'licenses2024/GRAB/grab_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/GRAB.tar.bz2', 'licenses2024/GRAB/grab_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/GRAB.tar.bz2', 'licenses2024/GRAB/grab_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="Max Planck Institute" href="http://resources.mpi-inf.mpg.de/HDM05/" target="_blank" rel="noopener">HDM05</a></p>
+<p>(aka MPI_HDM05)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">4</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">215</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">144.54</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HDM05/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HDM05/hdm05_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/HDM05.tar.bz2', 'licenses2024/HDM05/hdm05_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/HDM05.tar.bz2', 'licenses2024/HDM05/hdm05_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/HDM05.tar.bz2', 'licenses2024/HDM05/hdm05_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/HDM05renders.tar.bz2', 'licenses2024/HDM05/hdm05_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="HUMAN4D: A Human-Centric Multimodal Dataset for Motions and Immersive Media" href="https://tofis.github.io/human4d_dataset/" target="_blank" rel="noopener">HUMAN4D</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">8</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">148</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">72.60</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HUMAN4D/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HUMAN4D/human4d_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/HUMAN4D.tar.bz2', 'licenses2024/HUMAN4D/human4d_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/HUMAN4D.tar.bz2', 'licenses2024/HUMAN4D/human4d_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/HUMAN4Drenders.tar.bz2', 'licenses2024/HUMAN4D/human4d_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Human Eva" href="http://humaneva.is.tue.mpg.de" target="_blank" rel="noopener">HumanEva</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">3</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">28</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">8.47</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HumanEva/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/HumanEva/humaneva_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/HumanEva.tar.bz2', 'licenses2024/HumanEva/humaneva_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/HumanEva.tar.bz2', 'licenses2024/HumanEva/humaneva_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/HumanEva.tar.bz2', 'licenses2024/HumanEva/humaneva_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/HumanEvarenders.tar.bz2', 'licenses2024/HumanEva/humaneva_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Karlsruhe Institute of Technology" href="https://motion-database.humanoids.kit.edu/" target="_blank" rel="noopener">KIT</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">55</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">4232</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">661.84</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/KIT/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/KIT/kit_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/KITrenders.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> <button onclick="openModalLicense('https://amass.is.tue.mpg.de/download/dl.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G (Mirror)</button> <button onclick="openModalLicense('https://amass.is.tue.mpg.de/download/dl.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G (Mirror)</button> <button onclick="openModalLicense('https://amass.is.tue.mpg.de/download/dl.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/KIT.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N (Mirror)</button> <button onclick="openModalLicense('https://amass.is.tue.mpg.de/download/dl.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/KITrenders.tar.bz2', 'licenses2024/KIT/kit_license_updated.html')" class="btn btn-primary mb-1" type="button">Render (Mirror)</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="MoSh: Motion and Shape Capture from Sparse Markers" href="https://mosh.is.tuebingen.mpg.de/" target="_blank" rel="noopener">MoSh</a></p>
+<p>(aka MPI_mosh)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">19</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">77</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">16.53</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/MoSh/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/MoSh/mosh_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/MoSh.tar.bz2', 'licenses2024/MoSh/mosh_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/MoSh.tar.bz2', 'licenses2024/MoSh/mosh_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/MoSh.tar.bz2', 'licenses2024/MoSh/mosh_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/MoShrenders.tar.bz2', 'licenses2024/MoSh/mosh_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="Pose-Conditioned Joint Angle Limits for 3D Human Pose Reconstruction" href="https://poseprior.is.tue.mpg.de/" target="_blank" rel="noopener">PosePrior</a></p>
+<p>(aka MPI_Limits)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">3</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">35</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">20.82</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/PosePrior/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/PosePrior/poseprior_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/PosePrior.tar.bz2', 'licenses2024/PosePrior/poseprior_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/PosePrior.tar.bz2', 'licenses2024/PosePrior/poseprior_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/PosePrior.tar.bz2', 'licenses2024/PosePrior/poseprior_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/PosePriorrenders.tar.bz2', 'licenses2024/PosePrior/poseprior_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Simon Fraser University &amp; National University of Singapore" href="https://mocap.cs.sfu.ca/" target="_blank" rel="noopener">SFU</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">7</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">44</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">15.23</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/SFU/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/SFU/sfu_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/SFU.tar.bz2', 'licenses2024/SFU/sfu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/SFU.tar.bz2', 'licenses2024/SFU/sfu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/SFU.tar.bz2', 'licenses2024/SFU/sfu_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/SFUrenders.tar.bz2', 'licenses2024/SFU/sfu_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="None" href="https://soma.is.tue.mpg.de/" target="_blank" rel="noopener">SOMA</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">2</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">69</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">18.27</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/SOMA/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/SOMA/soma_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/SOMA.tar.bz2', 'licenses2024/SOMA/soma_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/neutral/mosh_results/SOMA.tar.bz2', 'licenses2024/SOMA/soma_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/SOMA.tar.bz2', 'licenses2024/SOMA/soma_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/SOMA.tar.bz2', 'licenses2024/SOMA/soma_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mp4_renders/SOMArenders.tar.bz2', 'licenses2024/SOMA/soma_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="Synchronized Scans and Markers Dataset" href="https://amass.is.tue.mpg.de/" target="_blank" rel="noopener">SSM</a></p>
+<p>(aka SSM_synced)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">3</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">30</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">1.87</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;">&nbsp;</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/SSM/ssm_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/SSM.tar.bz2', 'licenses2024/SSM/ssm_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/SSM.tar.bz2', 'licenses2024/SSM/ssm_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/SSM.tar.bz2', 'licenses2024/SSM/ssm_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/SSMrenders.tar.bz2', 'licenses2024/SSM/ssm_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="Perception of finger motion from reduced marker sets" href="https://people.rennes.inria.fr/Ludovic.Hoyet/fingers.shtml" target="_blank" rel="noopener">TCDHands</a></p>
+<p>(aka TCD_handMocap)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">1</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">62</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">8.37</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/TCDHands/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/TCDHands/tcdhands_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/TCDHands.tar.bz2', 'licenses2024/TCDHands/tcdhands_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/TCDHands.tar.bz2', 'licenses2024/TCDHands/tcdhands_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/TCDHands.tar.bz2', 'licenses2024/TCDHands/tcdhands_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/TCDHandsrenders.tar.bz2', 'licenses2024/TCDHands/tcdhands_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="Total Capture: 3D Human Pose Estimation Fusing Video and Inertial Sensors" href="https://cvssp.org/data/totalcapture/" target="_blank" rel="noopener">TotalCapture</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">5</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">37</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">41.10</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/TotalCapture/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/TotalCapture/totalcapture_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/TotalCapture.tar.bz2', 'licenses2024/TotalCapture/totalcapture_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/TotalCapture.tar.bz2', 'licenses2024/TotalCapture/totalcapture_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/TotalCapture.tar.bz2', 'licenses2024/TotalCapture/totalcapture_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/TotalCapturerenders.tar.bz2', 'licenses2024/TotalCapture/totalcapture_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a style="color: #337ab7;" title="None" href="http://amass.is.tue.mpg.de" target="_blank" rel="noopener">Transitions</a></p>
+<p>(aka Transitions_mocap)</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">1</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">110</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">15.10</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;">&nbsp;</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;">&nbsp;</td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/Transitions.tar.bz2', 'licences/transitions.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/Transitions.tar.bz2', 'licences/transitions.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/Transitions.tar.bz2', 'licences/transitions.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplh/gender_specific/mp4_renders/Transitionsrenders.tar.bz2', 'licences/transitions.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;"><a style="color: #337ab7;" title="None" href="https://motion-database.humanoids.kit.edu/" target="_blank" rel="noopener">WEIZMANN</a></td>
+<td class="subject_sum" style="height: 10px; width: 8%; text-align: center; line-height: 1;">5</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;">2222</td>
+<td class="minute_sum" style="height: 10px; width: 3%; text-align: center; line-height: 1;">505.35</td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/WEIZMANN/citation.bib">Citation</a></td>
+<td style="width: 1.5%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/licenses2024/WEIZMANN/weizmann_kit_license_updated.html">License</a></td>
+<td style="height: 10px; width: 74%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/WEIZMANN.tar.bz2', 'licenses2024/WEIZMANN/weizmann_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/WEIZMANN.tar.bz2', 'licenses2024/WEIZMANN/weizmann_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;resume=1&amp;sfile=amass_per_dataset/smplx/neutral/mp4_renders/WEIZMANNrenders.tar.bz2', 'licenses2024/WEIZMANN/weizmann_kit_license_updated.html')" class="btn btn-primary mb-1" type="button">Render</button> </span></p>
+</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+<td style="width: 3.11111%;">&nbsp;</td>
+</tr>
+<tr class="active" style="height: 22px;">
+<td id="datset_total" style="height: 22px; width: 6%; text-align: center;"><strong>24</strong></td>
+<td id="subject_total" style="height: 22px; width: 8%; text-align: center;"><strong>500</strong></td>
+<td id="motion_total" style="height: 22px; width: 6%; text-align: center;"><strong>17916</strong></td>
+<td id="minute_total" style="height: 22px; width: 3%; text-align: center;"><strong>3772.45</strong></td>
+<td style="width: 1.5%; text-align: center;"><strong>&nbsp;</strong></td>
+<td style="width: 1.5%; text-align: center;"><strong>&nbsp;</strong></td>
+<td style="height: 22px; width: 74%;">&nbsp;</td>
+<td style="width: 3.11111%; height: 22px;">&nbsp;</td>
+<td style="width: 3.11111%; height: 22px;">&nbsp;</td>
+</tr>
+</tbody>
+</table></div></div><div class="section section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"><p>&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Additional datasets</strong></p>
+<p><span style="text-decoration: underline; color: #7f0303;">The following datasets were not part of the original AMASS release. Please be sure to follow their license agreements and cite them separately.</span></p>
+<table class="table table-downloads table-hover table-condensed only-col1" style="height: 20px; width: 110%; margin-left: auto; margin-right: auto;">
+<thead>
+<tr style="height: 143px;">
+<th style="height: 10px; text-align: center; vertical-align: middle; line-height: 1; width: 6%;">&nbsp;</th>
+<th style="text-align: center; vertical-align: middle; line-height: 1; width: 5.92926%;">Updated</th>
+<th style="height: 10px; text-align: center; vertical-align: middle; line-height: 1; width: 2.07074%;">Subjects</th>
+<th style="height: 10px; text-align: center; vertical-align: middle; line-height: 1; width: 6%;">Motions</th>
+<th style="height: 10px; text-align: center; vertical-align: middle; line-height: 1; width: 0.75%;">Authors</th>
+<th style="text-align: center; vertical-align: middle; line-height: 1; width: 0.375%;">Required citation</th>
+<th style="text-align: center; vertical-align: middle; line-height: 1; width: 0.375%;">Acknowledgements</th>
+<th style="height: 10px; text-align: center; vertical-align: middle; line-height: 1; width: 57.4445%;">Bodies</th>
+</tr>
+</thead>
+<tbody>
+<tr style="height: 22px;">
+<td style="height: 10px; width: 6%; line-height: 1;">
+<p><a href="https://moyo.is.tue.mpg.de/index.html">MOYO</a></p>
+</td>
+<td style="width: 5.92926%; text-align: center; line-height: 1;">
+<p>2024-11-08</p>
+</td>
+<td class="subject_sum" style="height: 10px; width: 2.07074%; text-align: center; line-height: 1;">
+<p>1</p>
+</td>
+<td class="motion_sum" style="height: 10px; width: 6%; text-align: center; line-height: 1;"><span style="color: #95a5a6;"><span style="text-decoration: line-through;">181</span> </span>337<span style="text-decoration: line-through;"><br /></span></td>
+<td class="minute_sum" style="height: 10px; width: 0.75%; text-align: center; line-height: 1;">Tripathi et al.</td>
+<td style="width: 0.375%; text-align: center; line-height: 1;"><span style="color: #ba372a;"><a style="color: #ba372a;" href="https://download.is.tue.mpg.de/amass/citations_acknowledgements/moyo_citation.txt">Citation</a></span></td>
+<td style="width: 0.375%; text-align: center; line-height: 1;"><a href="https://download.is.tue.mpg.de/amass/citations_acknowledgements/moyo_acknowledgements.txt">Acknowledgements</a></td>
+<td style="height: 10px; width: 57.4445%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/MOYO_smplh_gendered.zip', 'licenses2024/MOYO/moyo_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplh/neutral/mosh_results/MOYO_smplh_neutral.zip', 'licenses2024/MOYO/moyo_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/MOYO_smplx_gendered.zip', 'licenses2024/MOYO/moyo_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/MOYO_smplx_neutral.zip', 'licenses2024/MOYO/moyo_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplx/gender_specific/mp4_renders/MOYO_renders.zip', 'licenses2024/MOYO/moyo_license_updated.html')" class="btn btn-primary mb-1" type="button">Renders</button> </span></p>
+</td>
+</tr>
+<tr>
+<td style="width: 6%; line-height: 1;">
+<p><a href="https://zenodo.org/records/3862782">LARa</a></p>
+</td>
+<td style="width: 5.92926%; text-align: center; line-height: 1;">
+<p>2025-02-24</p>
+</td>
+<td style="width: 2.07074%; text-align: center; line-height: 1;">
+<p>16</p>
+</td>
+<td style="width: 6%; text-align: center; line-height: 1;">452</td>
+<td style="width: 0.75%; text-align: center; line-height: 1;">Niemann et al.</td>
+<td style="width: 0.375%; text-align: center; line-height: 1;"><span style="color: #ba372a;"><a style="color: #ba372a;" href="https://download.is.tue.mpg.de/amass/licenses2024/LARa/citation.bib">Citation</a></span></td>
+<td style="width: 0.375%; text-align: center; line-height: 1;">&nbsp;</td>
+<td style="width: 57.4445%; text-align: center; line-height: 1;">
+<p><span style="font-size: 14pt;"><button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplh/gender_specific/mosh_results/LARa_smplh_gendered.zip', 'licenses2024/LARa/lara_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplh/neutral/mosh_results/LARa_smplh_neutral.zip', 'licenses2024/LARa/lara_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL+H N</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplx/gender_specific/mosh_results/LARa_smplx_gendered.zip', 'licenses2024/LARa/lara_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X G</button> <button onclick="openModalLicense('https://download.is.tue.mpg.de/download.php?domain=amass&amp;sfile=amass_per_dataset/smplx/neutral/mosh_results/LARa_smplx_neutral.zip', 'licenses2024/LARa/lara_license_updated.html')" class="btn btn-primary mb-1" type="button">SMPL-X N</button> </span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p dir="auto">&nbsp;</p></div></div><div class="section section-no-padding-top section-no-padding-bottom" style=""><div class="container content-link"><p><br />To download additional data for SSM and DYNA, including 4D scans, please check the <a href="extra.php">Extra</a> page.</p>
+<p>&nbsp;</p></div></div><div class="d-none d-sm-block"><div class="section-footer-bottom section-border-top section-footer-ps-sub-bottom"><div class="container"><div class="row"><div class="col-md-8 content-link"><small>&copy; 2020 Max-Planck-Gesellschaft <small class="text-muted ml-1 mr-1">-</small><a href="imprint.html">Imprint</a><small class="text-muted ml-1 mr-1">-</small><a href="privacy-policy.html">Privacy Policy</a><small class="text-muted ml-1 mr-1">-</small><a href="license.html">License</a></small></div><div class="col-md-4 text-right" id="div_login2"><small><a class="btn btn-sm btn-footer-bottom-register mr-2" href="register.php">Register</a></small><small><a class="btn btn-sm btn-footer-bottom" href="login.php">Sign In</a></small></div></div></div></div></div><div class="d-block d-sm-none"><div class="section-footer-bottom section-border-top section-footer-ps-sub-bottom"><div class="container"><div class="row"><div class="col-md-8 content-link"><small>&copy; 2020 Max-Planck-Gesellschaft </small></div></div></div></div></div></main><div class="modal" id="licensemodal" tabindex="-1" role="dialog" aria-labelledby="licensemodalLabel" aria-hidden="true"><div class="modal-dialog modal-lg" role="document"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="licensemodalLabel">Accept license</h5><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body"><div class="form-group" id="div_iframe"></div></div><div class="modal-footer"><button type="button" class="btn btn-primary" id="accept_license">Accept</button><button type="button" class="btn btn-secondary" data-dismiss="modal">Deny</button></div></div></div></div><script src="skin/default_tracking_popup/jquery-3.6.0.min.js" data-turbolinks-track="reload"></script><script src="skin/default_tracking_popup/default.js" data-turbolinks-track="reload"></script><script src="skin/default_tracking_popup/amass.js" data-turbolinks-track="reload"></script></body></html>

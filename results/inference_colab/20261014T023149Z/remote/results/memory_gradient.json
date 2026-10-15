@@ -1,0 +1,80 @@
+[
+  {
+    "steps": 25,
+    "method": "full_graph",
+    "seconds": 0.1043547019999096,
+    "peak_allocated_mib": 77.5107421875,
+    "incremental_peak_mib": 0.748046875,
+    "peak_reserved_mib": 98.0,
+    "gradient_relative_error": 0.0,
+    "gradient_cosine": 0.9999999403953552,
+    "reconstruction": {}
+  },
+  {
+    "steps": 25,
+    "method": "adjoint",
+    "seconds": 0.6396695650000765,
+    "peak_allocated_mib": 77.81689453125,
+    "incremental_peak_mib": 1.05419921875,
+    "peak_reserved_mib": 98.0,
+    "gradient_relative_error": 0.00690500671043992,
+    "gradient_cosine": 0.9999760985374451,
+    "reconstruction": {
+      "inverse_iterations": 177,
+      "max_local_inverse_residual": 1.862645149230957e-07,
+      "source_reconstruction_max_abs": 0.00046326033771038055
+    }
+  },
+  {
+    "steps": 50,
+    "method": "full_graph",
+    "seconds": 0.21337662499990984,
+    "peak_allocated_mib": 79.2431640625,
+    "incremental_peak_mib": 1.48095703125,
+    "peak_reserved_mib": 98.0,
+    "gradient_relative_error": 0.0,
+    "gradient_cosine": 1.000000238418579,
+    "reconstruction": {}
+  },
+  {
+    "steps": 50,
+    "method": "adjoint",
+    "seconds": 0.9083616759999131,
+    "peak_allocated_mib": 77.81689453125,
+    "incremental_peak_mib": 0.05419921875,
+    "peak_reserved_mib": 98.0,
+    "gradient_relative_error": 0.0037848809733986855,
+    "gradient_cosine": 0.9999929666519165,
+    "reconstruction": {
+      "inverse_iterations": 235,
+      "max_local_inverse_residual": 1.9371509552001953e-07,
+      "source_reconstruction_max_abs": 0.00026143903960473835
+    }
+  },
+  {
+    "steps": 100,
+    "method": "full_graph",
+    "seconds": 0.4330803800000922,
+    "peak_allocated_mib": 80.7080078125,
+    "incremental_peak_mib": 2.94580078125,
+    "peak_reserved_mib": 100.0,
+    "gradient_relative_error": 0.0,
+    "gradient_cosine": 1.0,
+    "reconstruction": {}
+  },
+  {
+    "steps": 100,
+    "method": "adjoint",
+    "seconds": 1.480951955999899,
+    "peak_allocated_mib": 77.81689453125,
+    "incremental_peak_mib": 0.05419921875,
+    "peak_reserved_mib": 98.0,
+    "gradient_relative_error": 0.012360685504972935,
+    "gradient_cosine": 0.9999239444732666,
+    "reconstruction": {
+      "inverse_iterations": 338,
+      "max_local_inverse_residual": 1.9371509552001953e-07,
+      "source_reconstruction_max_abs": 0.0008472193730995059
+    }
+  }
+]

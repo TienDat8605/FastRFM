@@ -1,0 +1,40 @@
+# Table 3: Motion Denoising Configuration
+task: "denoising"
+checkpoint_path: "checkpoints/poserfm/best_model.pt"
+
+data:
+  datasets:
+    - name: "HumanEva"
+      num_segments: 190
+    - name: "HPS"
+      num_segments: 350
+      seed: 42
+  fps: 30
+  segment_length: 60  # 2 seconds
+
+guidance:
+  solver:
+    method: "euler"
+    num_steps: 100
+    retraction: "last_step"
+  lr: 0.25
+  blend_alpha: 0.75
+  lambda_data: 1.0
+  lambda_traj: 1.0e-5
+  conditions:
+    noise_40mm:
+      sigma_m: 0.04
+      lambda_temp: 1.0e-2
+      iterations: 300
+    noise_100mm:
+      sigma_m: 0.10
+      lambda_temp: 1.0e-1
+      iterations: 400
+
+targets:
+  HumanEva:
+    noise_40mm_MPJPE: 18.88
+    noise_100mm_MPJPE: 34.68
+  HPS:
+    noise_40mm_MPJPE: 19.79
+    noise_100mm_MPJPE: 32.95

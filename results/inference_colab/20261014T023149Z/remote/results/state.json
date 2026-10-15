@@ -1,0 +1,8 @@
+{
+  "status": "failed_adjoint_gradient_gate",
+  "steps": 100,
+  "relative_error": 0.012360685504972935,
+  "gate": 0.01,
+  "training_complete": true,
+  "training_reusable": true
+}

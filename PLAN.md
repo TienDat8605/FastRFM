@@ -1,5 +1,16 @@
 # PoseD-Flow reproduction experiment plan
 
+Active follow-up: [exact-pullback four-step screening](protocol/pullback_screen.md),
+via `posed_flow_colab_poc.py --mode pullback_screen`, with frozen sequence-disjoint
+confirmation and a four-hour T4 budget.
+
+**Current work:** inference acceleration on a fresh Colab T4 via SSH, defined in
+[protocol/inference_colab.md](protocol/inference_colab.md). The previous 3DPW
+runtime was terminated at the user's request; partial outputs were recovered
+under `results/3dpw_study/20261014T014832Z-all/recovered/`. The earlier transfer
+protocol remains in [protocol/study_3dpw.md](protocol/study_3dpw.md). The full-paper
+reproduction below remains a separate longer-term objective.
+
 ## 1. Objective and evidence
 
 Reproduce **Tables 1–6**: train PoseRFM from scratch, evaluate generation, completion, denoising, and human mesh recovery, and reproduce the geometric ablations. Use one remote GPU with at least 24 GB VRAM.

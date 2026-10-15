@@ -1,0 +1,20 @@
+{
+  "scope": "Independent 3DPW transfer study; no paper-table reproduction claim",
+  "coverage": {
+    "smoke": {
+      "completed_rows": 0,
+      "failed_cells": 0
+    },
+    "development": {
+      "completed_rows": 0,
+      "failed_cells": 0
+    },
+    "final": {
+      "completed_rows": 0,
+      "failed_cells": 0
+    }
+  },
+  "summary": {},
+  "paired_comparisons": {},
+  "failed_cells": []
+}

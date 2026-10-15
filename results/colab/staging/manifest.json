@@ -1,0 +1,18 @@
+{
+  "scope": "3DPW poses and AMASS pose-only inputs; images excluded",
+  "splits": {
+    "train": {
+      "person_frames": 23553,
+      "sequences": 25
+    },
+    "validation": {
+      "person_frames": 10858,
+      "sequences": 12
+    },
+    "test": {
+      "person_frames": 40219,
+      "sequences": 24
+    }
+  },
+  "amass_files": 504
+}

@@ -1,0 +1,137 @@
+{
+  "teacher_sha256": "2220e27e83de3090208b497258a476c6192e3bbec63c97cf50014ccbfdacbabf",
+  "train_sha256": "4232b53a45d3103e51352f5c0e0c58a48c7faec841837840b4c6157d1c32279d",
+  "validation_sha256": "fa8eef177fd0d37e3e8a7676f27a689640a3b319cde3bc92ed2e03af2f6946c2",
+  "development_sequences": [
+    "courtyard_basketball_01",
+    "outdoors_crosscountry_00",
+    "downtown_walkDownhill_00",
+    "outdoors_golf_00",
+    "outdoors_parcours_01",
+    "courtyard_hug_00",
+    "courtyard_rangeOfMotions_01",
+    "courtyard_drinking_00"
+  ],
+  "confirmation_sequences": [
+    "courtyard_jumpBench_01",
+    "outdoors_parcours_00",
+    "courtyard_dancing_00",
+    "outdoors_freestyle_01"
+  ],
+  "development_ids": [
+    80,
+    3304,
+    5481,
+    7152,
+    3075,
+    10231,
+    7669,
+    6405,
+    6852,
+    2066,
+    770,
+    3464,
+    5641,
+    7769,
+    10441,
+    6325,
+    6108,
+    4058,
+    6355,
+    650,
+    2725,
+    7102,
+    7729,
+    10751,
+    6932,
+    7849,
+    360,
+    10281,
+    2546,
+    6465,
+    4458,
+    5451
+  ],
+  "confirmation_ids": [
+    4562,
+    7316,
+    1497,
+    8300,
+    1737,
+    7890,
+    7296,
+    4612,
+    4492,
+    8510,
+    1398,
+    7396,
+    4812,
+    1328,
+    9450,
+    7366,
+    4842,
+    7516,
+    1657,
+    8410,
+    1268,
+    9040,
+    7286,
+    4502,
+    1168,
+    7980,
+    7436,
+    5082,
+    1048,
+    9480,
+    4622,
+    7476
+  ],
+  "excluded_pilot_ids": [
+    80,
+    4298,
+    4952,
+    5798,
+    6625,
+    7416,
+    7809,
+    7870
+  ],
+  "source_hashes": {
+    "/content/posedflow-inference/src/acceleration/pullback_screen.py": "f438d9372c9ddd5b8e63f586eb40cc180f45782cbbf556ea91850858466b9dc0",
+    "src/acceleration/distillation.py": "51d6b086fb72746bd78b2284423507e03e3078db1b1b773667e0188b6c10f8a0",
+    "src/acceleration/adjoint.py": "691c72bb78ab2c0c1e17a650f8937486c2fcb43b67651ba67f943af5403ceadd",
+    "posed_flow_colab_poc.py": "184cfaa469eb2815637dd01d43f20f8ec706a3c1c2e7751dc6bce801da65f1b6"
+  },
+  "budget_hours": 4.0,
+  "device": "Tesla T4",
+  "torch": "2.11.0+cu130",
+  "recipes": {
+    "endpoint": [
+      0
+    ],
+    "random": [
+      0.001,
+      0.01,
+      0.1
+    ],
+    "task": [
+      0.001,
+      0.01,
+      0.1
+    ]
+  },
+  "updates": 1500,
+  "batch_size": 32,
+  "confirmation_iterations": 200,
+  "hypotheses": 2,
+  "inference_seeds": [
+    0,
+    1
+  ],
+  "promotion": {
+    "speedup": 8,
+    "hidden_ratio": 1.05,
+    "visible_ratio": 1.05,
+    "apd_ratio": 0.9
+  }
+}
